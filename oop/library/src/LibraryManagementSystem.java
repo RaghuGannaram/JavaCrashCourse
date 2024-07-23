@@ -45,15 +45,15 @@ public class LibraryManagementSystem {
         Member member = new Member("Bob", "M001");
 
         // Register the member with the library
-        library.registerMember(member);
+        librarian.registerMember(library, member);
 
         // Member borrows a book
         member.borrowBook(book1);
-        library.recordTransaction(new Transaction(book1, member, new Date(), TransactionType.BORROW));
+        librarian.recordTransaction(library, new Transaction(book1, member, new Date(), TransactionType.BORROW));
 
         // Member returns a book
         member.returnBook(book1);
-        library.recordTransaction(new Transaction(book1, member, new Date(), TransactionType.RETURN));
+        librarian.recordTransaction(library, new Transaction(book1, member, new Date(), TransactionType.RETURN));
 
         // Display all transactions
         for (Transaction transaction : library.getTransactions()) {

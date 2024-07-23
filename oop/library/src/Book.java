@@ -29,14 +29,14 @@ public class Book {
 
     // Getters
     public String getTitle() {
-        return title;
+        return this.title;
     }
 
     public String getAuthor() {
-        return author;
+        return this.author;
     }
 
     public String getIsbn() {
-        return isbn;
+        return this.isbn;
     }
 }

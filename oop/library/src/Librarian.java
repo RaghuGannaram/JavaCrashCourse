@@ -25,27 +25,27 @@ public class Librarian extends Person {
 
     public void addBook(Library library, Book book){
         library.addBook(book);
-        System.out.println(getName() + " added " + book.getTitle() + " to the library.");
+        System.out.println(this.getName() + " added " + book.getTitle() + " to the library.");
     }
 
     public void removeBook(Library library, Book book){
         library.removeBook(book);
-        System.out.println(getName() + " removed " + book.getTitle() + " from the library.");
+        System.out.println(this.getName() + " removed " + book.getTitle() + " from the library.");
     }
 
     public void registerMember(Library library, Member member){
         library.registerMember(member);
-        System.out.println(getName() + " registered " + member.getName() + " as a member of the library.");
+        System.out.println(this.getName() + " registered " + member.getName() + " as a member of the library.");
     }
 
     public void recordTransaction(Library library, Transaction transaction){
         library.recordTransaction(transaction);
-        System.out.println(getName() + " recorded a transaction.");
+        System.out.println(this.getName() + " recorded a transaction.");
     }
 
     @Override
     public void performRole() {
-        System.out.println(getName() + " is managing the library.");
+        System.out.println(this.getName() + " is managing the library.");
     }
 
 

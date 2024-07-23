@@ -30,10 +30,10 @@ public abstract class Person {
 
     // Getters
     public String getName() {
-        return name;
+        return this.name;
     }
 
     public String getId() {
-        return id;
+        return this.id;
     }
 }

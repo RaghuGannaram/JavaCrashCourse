@@ -35,19 +35,19 @@ public class Transaction {
 
     // Getters
     public Book getBook() {
-        return book;
+        return this.book;
     }
 
     public Member getMember() {
-        return member;
+        return this.member;
     }
 
     public Date getDate() {
-        return date;
+        return this.date;
     }
 
     public TransactionType getType() {
-        return type;
+        return this.type;
     }
 
 }

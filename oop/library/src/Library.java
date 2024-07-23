@@ -35,34 +35,34 @@ public class Library {
 
     // Method to add a book to the library
     public void addBook(Book book) {
-        books.add(book);
+        this.books.add(book);
     }
 
     // Method to remove a book from the library
     public void removeBook(Book book) {
-        books.remove(book);
+        this.books.remove(book);
     }
 
     // Method to register a new member
     public void registerMember(Member member) {
-        members.add(member);
+        this.members.add(member);
     }
 
     // Method to record a transaction
     public void recordTransaction(Transaction transaction) {
-        transactions.add(transaction);
+        this.transactions.add(transaction);
     }
 
     // Getters
     public List<Book> getBooks() {
-        return books;
+        return this.books;
     }
 
     public List<Member> getMembers() {
-        return members;
+        return this.members;
     }
 
     public List<Transaction> getTransactions() {
-        return transactions;
+        return this.transactions;
     }
 }

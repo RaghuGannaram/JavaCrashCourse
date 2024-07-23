@@ -24,28 +24,28 @@ public class Member extends Person {
 
     public Member(String name, String id) {
         super(name, id);
-        borrowedBooks = new ArrayList<>();
+        this.borrowedBooks = new ArrayList<>();
     }
 
     // Method to borrow a book
     public void borrowBook(Book book) {
-        borrowedBooks.add(book);
-        System.out.println(getName() + " borrowed " + book.getTitle());
+        this.borrowedBooks.add(book);
+        System.out.println(this.getName() + " borrowed " + book.getTitle());
     }
 
     // Method to return a book
     public void returnBook(Book book) {
-        borrowedBooks.remove(book);
-        System.out.println(getName() + " returned " + book.getTitle());
+        this.borrowedBooks.remove(book);
+        System.out.println(this.getName() + " returned " + book.getTitle());
     }
 
     @Override
     public void performRole() {
-        System.out.println(getName() + " is a member of the library.");
+        System.out.println(this.getName() + " is a member of the library.");
     }
 
     // Getters
     public List<Book> getBorrowedBooks() {
-        return borrowedBooks;
+        return this.borrowedBooks;
     }
 }
